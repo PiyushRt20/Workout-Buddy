@@ -4,7 +4,9 @@ const express = require('express');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 
+//Routes
 const workoutRoutes = require('./routes/workout');
+const userRoutes = require('./routes/user')
 
 dotenv.config();
 
@@ -26,6 +28,7 @@ app.get('/', (req, res)=>{
 })
 
 app.use('/api/workouts', workoutRoutes);
+app.use('/api/user', userRoutes)
 
 //connect to database
 mongoose.connect(process.env.MONGO_URI)
