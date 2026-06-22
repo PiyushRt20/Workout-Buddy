@@ -37,20 +37,3 @@
   }
 }
 
-nav {
-  display: flex;
-  align-items: center;
-}
-
-nav a {
-  margin-left: 10px;
-}
-
-form.signup,
-form.login {
-  max-width: 400px;
-  margin: 40px auto;
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 25px;
-}
